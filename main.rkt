@@ -18,8 +18,4 @@
     [("-v" "--verbose") "show verbose (debug) logs" (set-logger-level! 'debug)]
     #:args (filename) ; expect one command-line argument: <filename>
     ; return the argument as a filename to compile
-    filename))
-  (log 'info "Info")
-  (log 'warn "Warning")
-  (log 'fatal "fatal")
-  (log 'fatal "File to read is ~s" filename))
+    (run-tokenizer))))
